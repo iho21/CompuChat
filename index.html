@@ -4,16 +4,240 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CompuChat</title>
+    <style>
+        /* Color Vars */
+        :root {
+            --total-dark: #000000;
+            --ultra-dark: #2e313c;
+            --dark-purple: #45404c;
+            --dark-grayish: #626375;
+            --sand-tan: #d5cec5;
+            --light-sandy: #cfcbc8;
+            --pure-white: white;
+            --cloud-white: #f5f5f8;
+            --smoky-white: whitesmoke;
+            --control-bg-1: #013f4e;
+            --control-bg-2: #00718f;
+            --control-bg-3: #0ba5be;
+            --control-bg-4: #ec979c;
+            --control-bg-5: #e60002;
+        }
+
+        /* Base */
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12pt;
+            background-color: var(--cloud-white);
+        }
+
+        /* Header */
+        header {
+            display: block;
+            background-color: var(--total-dark);
+        }
+
+        ul#navigation-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li.nav-item {
+            display: block;
+            margin: 0;
+            padding: 8px;
+            background-color: transparent;
+        }
+
+        li.nav-item:hover {
+            background-color: var(--ultra-dark);
+        }
+
+        a.nav-link {
+            text-decoration: none; 
+        }
+
+        #signup-link {
+            color: var(--control-bg-2);
+        }
+
+        #signin-link {
+            color: var(--light-sandy);
+        }
+
+        #q-and-a-link {
+            color: var(--control-bg-4);
+        }
+
+        div#logo-box {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 8px 16px;
+        }
+
+        #logo-img, #logo-title {
+            display: inline;
+            margin: 0 8px;
+            color: white;
+        }
+
+        /* Main Content */
+        main {
+            display: flex;
+            flex-direction: column;
+            padding: 0 5%;
+        }
+
+        section {
+            display: block;
+            margin: 8px 0;
+            padding: 8px;
+            background-color: var(--pure-white);
+        }
+
+        @media (min-width: 400px) {
+            #testimony-wrapper {
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 8px;
+            }
+
+            .testimony-header {
+                padding: 8px;
+                background-color: var(--dark-purple);
+            }
+
+            .testimony-header > h5, .testimony-header > h6 {
+                padding: 4px;
+            }
+
+            .testimony-box {
+                border: none;
+                background-color: var(--dark-grayish);
+                color: var(--cloud-white);
+            }
+
+            .testimony-box > p {
+                display: block;
+                padding: 8px;
+            }
+
+        }
+
+        @media (max-width: 399px) {
+            #testimony-wrapper {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .testimony-header {
+                padding: 4px;
+                background-color: var(--dark-purple);
+            }
+
+            .testimony-header > h5, .testimony-header > h6 {
+                padding: 4px;
+            }
+
+            .testimony-box {
+                margin: 4px 0;
+                border: none;
+                background-color: var(--dark-grayish);
+                color: var(--cloud-white);
+            }
+
+            .testimony-box > p {
+                display: block;
+                padding: 4px;
+            }
+
+        }
+
+        /* Footer Content */
+        footer {
+            display: block;
+            background-color: var(--total-dark);
+        }
+
+        p#credits {
+            display: block;
+            margin: 8px;
+            padding: 8px;
+            text-align: center;
+            font-family: inherit;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation Bar with Logo -->
-    <ul>
-        <li>Logo</li>
-        <li>Sign up</li>
-        <li>Sign in</li>
-    </ul>
-    <!-- Landing Page Image? -->
-    <!-- About Site -->
-    <!-- Testimonial Carousel? -->
+    <header>
+        <!-- Logo & Navigation Bar -->
+        <nav>
+            <ul id="navigation-wrapper">
+                <li class="nav-item"><a id="logo-box" class="nav-link" href="#"><img id="logo-img" src="" alt="logo"></a></li>
+                <li class="nav-item"><a id="signup-link" class="nav-link" href="#">Sign Up</a></li>
+                <li class="nav-item"><a id="signin-link" class="nav-link" href="#">Sign In</a></li>
+                <li class="nav-item"><a id="q-and-a-link" class="nav-link">Q & A</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <!-- Landing Page Image? -->
+            <!-- About Site -->
+            <h3>About CompuChat</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora consectetur nemo excepturi porro provident consequuntur, aut doloremque! Nihil est reiciendis rem sed, consequuntur quas quis, quae eveniet atque earum sit.</p>
+        </section>
+        <!-- Testimonials -->
+        <section>
+            <h3>Testimonials</h3>
+            <div id="testimony-wrapper">
+                <div class="testimony-box">
+                    <div class="testimony-header">
+                        <h4>Person 1</h4>
+                        <h5>Student at Campus X</h5>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ab, quidem dolor culpa omnis minima explicabo facilis molestias! At quidem nostrum corrupti commodi ipsum incidunt aperiam est reprehenderit vel maiores.</p>
+                </div>
+                <div class="testimony-box">
+                    <div class="testimony-header">
+                        <h4>Person 2</h4>
+                        <h5>Student at Campus X</h5>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus magni, maxime nobis officiis sunt exercitationem ipsum corporis accusantium odio ea assumenda itaque aspernatur nisi ipsam impedit, consectetur dicta modi temporibus!</p>
+                </div>
+                <div class="testimony-box">
+                    <div class="testimony-header">
+                        <h4>Person 3</h4>
+                        <h5>Student at Campus X</h5>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus magni, maxime nobis officiis sunt exercitationem ipsum corporis accusantium odio ea assumenda itaque aspernatur nisi ipsam impedit, consectetur dicta modi temporibus!</p>
+                </div>
+                <div class="testimony-box">
+                    <div class="testimony-header">
+                        <h4>Person 4</h4>
+                        <h5>Instructor at Campus X, Dept. of CS</h5>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus magni, maxime nobis officiis sunt exercitationem ipsum corporis accusantium odio ea assumenda itaque aspernatur nisi ipsam impedit, consectetur dicta modi temporibus!</p>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <p id="credits">
+                CompuChat<br>
+                Made By: Derek Tan, Ivan Ho<br>
+                &COPY; August 2023
+            </p>
+        </footer>
+    </main>
 </body>
 </html>
