@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 4.6.x CSS (Use later.) -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
     <title>CompuChat</title>
     <style>
         /* Color Vars */
@@ -119,6 +122,11 @@
                 padding: 4px;
             }
 
+            span.user-icon-box {
+                display: inline-block;
+                margin: 0 8px 0 4px;
+            }
+
             .testimony-box {
                 border: none;
                 background-color: var(--dark-grayish);
@@ -145,6 +153,11 @@
 
             .testimony-header > h5, .testimony-header > h6 {
                 padding: 4px;
+            }
+
+            span.user-icon-box {
+                display: inline-block;
+                margin: 0 8px 0 4px;
             }
 
             .testimony-box {
@@ -202,28 +215,31 @@
             <div id="testimony-wrapper">
                 <div class="testimony-box">
                     <div class="testimony-header">
-                        <h4>Person 1</h4>
+                        <h4><span class="user-icon-box"><i class="fa-solid fa-user"></i></span>Person 1</h4>
                         <h5>Student at Campus X</h5>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ab, quidem dolor culpa omnis minima explicabo facilis molestias! At quidem nostrum corrupti commodi ipsum incidunt aperiam est reprehenderit vel maiores.</p>
                 </div>
                 <div class="testimony-box">
                     <div class="testimony-header">
-                        <h4>Person 2</h4>
+                        <h4><span class="user-icon-box"><i class="fa-solid fa-user"></i></span>Person 2</h4>
                         <h5>Student at Campus X</h5>
                     </div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus magni, maxime nobis officiis sunt exercitationem ipsum corporis accusantium odio ea assumenda itaque aspernatur nisi ipsam impedit, consectetur dicta modi temporibus!</p>
                 </div>
                 <div class="testimony-box">
                     <div class="testimony-header">
-                        <h4>Person 3</h4>
+                        <h4><span class="user-icon-box"><i class="fa-solid fa-user"></i></span>Person 3</h4>
                         <h5>Student at Campus X</h5>
                     </div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus magni, maxime nobis officiis sunt exercitationem ipsum corporis accusantium odio ea assumenda itaque aspernatur nisi ipsam impedit, consectetur dicta modi temporibus!</p>
                 </div>
                 <div class="testimony-box">
                     <div class="testimony-header">
-                        <h4>Person 4</h4>
+                        <h4>
+                            <span class="user-icon-box"><i class="fa-solid fa-user"></i>Person 4</span>
+                            Person 4
+                        </h4>
                         <h5>Instructor at Campus X, Dept. of CS</h5>
                     </div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus magni, maxime nobis officiis sunt exercitationem ipsum corporis accusantium odio ea assumenda itaque aspernatur nisi ipsam impedit, consectetur dicta modi temporibus!</p>
@@ -239,5 +255,15 @@
             </p>
         </footer>
     </main>
+    <!-- Bootstrap JS Deps. -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script> -->
+
+    <!-- Font-Awesome Icon Loader -->
+    <script src="https://kit.fontawesome.com/94dbf695c6.js" crossorigin="anonymous"></script>
 </body>
 </html>
